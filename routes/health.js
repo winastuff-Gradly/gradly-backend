@@ -26,7 +26,7 @@ setInterval(checkStripeHealth, STRIPE_CHECK_INTERVAL);
 checkStripeHealth(); // Check initial
 
 // GET /health - Health check rapide
-router.get('/health',
+router.get('/',
   catchAsync(async (req, res) => {
     // Test DB (rapide)
     let dbStatus = 'connected';
