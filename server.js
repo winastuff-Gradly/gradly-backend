@@ -113,7 +113,7 @@ process.on('unhandledRejection', (reason, promise) => {
 });
 
 console.log('✅ 10. Avant app.listen()');
-const server = app.listen(PORT, () => {
+const server = app.listen(PORT, '0.0.0.0', () => {
   logger.info('='.repeat(50));
   logger.info(`✅ Gradly Backend v2.5.0 - Server running`);
   logger.info('='.repeat(50));
