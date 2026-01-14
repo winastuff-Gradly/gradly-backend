@@ -112,6 +112,7 @@ process.on('unhandledRejection', (reason, promise) => {
   process.exit(1);
 });
 
+console.log("PORT ENV =", process.env.PORT);
 console.log('✅ 10. Avant app.listen()');
 const server = app.listen(PORT, '0.0.0.0', () => {
   logger.info('='.repeat(50));
